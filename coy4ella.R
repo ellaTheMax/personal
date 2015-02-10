@@ -35,7 +35,7 @@ y <- data.frame(
 
 y <- y[which(y$CaneInUse==1),]                #subset dataset where CaneInUse==1
 y <- y[grep("[F]",y$Sex),]                    #subset dataset where sex=='F'
-t <- y[(which(y$King.flowers.per.bud > 1)),]  #subset dataset where King flowers per windter bud are greater than 3
+t <- y[(which(y$King.flowers.per.bud > 3)),]  #subset dataset where King flowers per windter bud are greater than 3
 
 length(unique(t$Sel_yr)) #get number of Sel_yr
 
